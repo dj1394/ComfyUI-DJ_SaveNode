@@ -1,0 +1,2684 @@
+{
+    "categories":  [
+                       "默认分类",
+                       "常用节点",
+                       "图像处理",
+                       "文本处理",
+                       "节点组"
+                   ],
+    "favorites":  [
+                      {
+                          "type":  "Load Image Batch",
+                          "title":  "加载批次图像",
+                          "description":  "Load Image Batch",
+                          "properties":  {
+                                             "Node name for S\u0026R":  "Load Image Batch",
+                                             "cnr_id":  "pr-was-node-suite-comfyui-47064894",
+                                             "ver":  "1014f8a1477b8ae0144e16ed4fd6476cd109fb23",
+                                             "ttNbgOverride":  {
+                                                                   "color":  "#346434",
+                                                                   "groupcolor":  "#8A8"
+                                                               },
+                                             "ue_properties":  {
+                                                                   "version":  "7.0.1",
+                                                                   "widget_ue_connectable":  {
+
+                                                                                             },
+                                                                   "input_ue_unconnectable":  {
+
+                                                                                              }
+                                                               },
+                                             "widget_ue_connectable":  {
+
+                                                                       }
+                                         },
+                          "size":  {
+                                       "0":  239.708984375,
+                                       "1":  270
+                                   },
+                          "widgets":  [
+                                          {
+                                              "name":  "mode",
+                                              "type":  "combo",
+                                              "value":  "incremental_image"
+                                          },
+                                          {
+                                              "name":  "seed",
+                                              "type":  "number",
+                                              "value":  526633637765621
+                                          },
+                                          {
+                                              "name":  "control_after_generate",
+                                              "type":  "combo",
+                                              "value":  "increment"
+                                          },
+                                          {
+                                              "name":  "index",
+                                              "type":  "number",
+                                              "value":  0
+                                          },
+                                          {
+                                              "name":  "label",
+                                              "type":  "text",
+                                              "value":  "Batch 001"
+                                          },
+                                          {
+                                              "name":  "path",
+                                              "type":  "text",
+                                              "value":  "F:\\0 换装\\中年人6\\卡其色"
+                                          },
+                                          {
+                                              "name":  "pattern",
+                                              "type":  "text",
+                                              "value":  "*"
+                                          },
+                                          {
+                                              "name":  "allow_RGBA_output",
+                                              "type":  "combo",
+                                              "value":  "true"
+                                          },
+                                          {
+                                              "name":  "filename_text_extension",
+                                              "type":  "combo",
+                                              "value":  "true"
+                                          }
+                                      ],
+                          "id":  "1769859294752",
+                          "category":  "默认分类",
+                          "created_at":  1769859294.7520168
+                      },
+                      {
+                          "type":  "LayerUtility: ImageScaleByAspectRatio V2",
+                          "title":  "图层工具：按宽高比缩放 V2",
+                          "description":  "LayerUtility: ImageScaleByAspectRatio V2",
+                          "properties":  {
+                                             "Node name for S\u0026R":  "LayerUtility: ImageScaleByAspectRatio V2",
+                                             "cnr_id":  "comfyui_layerstyle",
+                                             "ver":  "42ccdd8f75ab312285eaa77073a5cc20bdba484c",
+                                             "ue_properties":  {
+                                                                   "widget_ue_connectable":  {
+                                                                                                 "aspect_ratio":  true,
+                                                                                                 "proportional_width":  true,
+                                                                                                 "proportional_height":  true,
+                                                                                                 "fit":  true,
+                                                                                                 "method":  true,
+                                                                                                 "round_to_multiple":  true,
+                                                                                                 "scale_to_side":  true,
+                                                                                                 "scale_to_length":  true,
+                                                                                                 "background_color":  true
+                                                                                             },
+                                                                   "version":  "7.0.1",
+                                                                   "input_ue_unconnectable":  {
+
+                                                                                              }
+                                                               },
+                                             "widget_ue_connectable":  {
+
+                                                                       }
+                                         },
+                          "size":  {
+                                       "0":  303.68515625,
+                                       "1":  330
+                                   },
+                          "widgets":  [
+                                          {
+                                              "name":  "aspect_ratio",
+                                              "type":  "combo",
+                                              "value":  "original"
+                                          },
+                                          {
+                                              "name":  "proportional_width",
+                                              "type":  "number",
+                                              "value":  1
+                                          },
+                                          {
+                                              "name":  "proportional_height",
+                                              "type":  "number",
+                                              "value":  1
+                                          },
+                                          {
+                                              "name":  "fit",
+                                              "type":  "combo",
+                                              "value":  "crop"
+                                          },
+                                          {
+                                              "name":  "method",
+                                              "type":  "combo",
+                                              "value":  "lanczos"
+                                          },
+                                          {
+                                              "name":  "round_to_multiple",
+                                              "type":  "combo",
+                                              "value":  "8"
+                                          },
+                                          {
+                                              "name":  "scale_to_side",
+                                              "type":  "combo",
+                                              "value":  "longest"
+                                          },
+                                          {
+                                              "name":  "scale_to_length",
+                                              "type":  "number",
+                                              "value":  1024
+                                          },
+                                          {
+                                              "name":  "background_color",
+                                              "type":  "text",
+                                              "value":  "#000000"
+                                          }
+                                      ],
+                          "id":  "1769859309875",
+                          "category":  "默认分类",
+                          "created_at":  1769859309.8754022
+                      },
+                      {
+                          "type":  "LayerMask: SegformerClothesPipelineLoader",
+                          "title":  "图层遮罩：Segformer 服装框架",
+                          "description":  "LayerMask: SegformerClothesPipelineLoader",
+                          "properties":  {
+                                             "Node name for S\u0026R":  "LayerMask: SegformerClothesPipelineLoader",
+                                             "cnr_id":  "comfyui_layerstyle",
+                                             "ver":  "c0fb64d0ebcb81c6c445a8af79ecee24bc3845b0",
+                                             "ue_properties":  {
+                                                                   "version":  "7.1",
+                                                                   "widget_ue_connectable":  {
+
+                                                                                             },
+                                                                   "input_ue_unconnectable":  {
+
+                                                                                              }
+                                                               },
+                                             "widget_ue_connectable":  {
+
+                                                                       }
+                                         },
+                          "size":  {
+                                       "0":  250,
+                                       "1":  470
+                                   },
+                          "widgets":  [
+                                          {
+                                              "name":  "model",
+                                              "type":  "combo",
+                                              "value":  "segformer_b3_clothes"
+                                          },
+                                          {
+                                              "name":  "face",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "hair",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "hat",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "sunglass",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "left_arm",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "right_arm",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "left_leg",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "right_leg",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "left_shoe",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "right_shoe",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "upper_clothes",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "skirt",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "pants",
+                                              "type":  "toggle",
+                                              "value":  true
+                                          },
+                                          {
+                                              "name":  "dress",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "belt",
+                                              "type":  "toggle",
+                                              "value":  true
+                                          },
+                                          {
+                                              "name":  "bag",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "scarf",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          }
+                                      ],
+                          "id":  "1769913452342",
+                          "category":  "默认分类",
+                          "created_at":  1769913452.3427992
+                      },
+                      {
+                          "type":  "easy imageRemBg",
+                          "title":  "图像背景移除",
+                          "description":  "easy imageRemBg",
+                          "properties":  {
+                                             "Node name for S\u0026R":  "easy imageRemBg",
+                                             "cnr_id":  "comfyui-easy-use",
+                                             "ver":  "3f37ba9491fa7f6c8520dda6cf92a8e2dcbee8fa",
+                                             "ue_properties":  {
+                                                                   "widget_ue_connectable":  {
+                                                                                                 "rem_mode":  true,
+                                                                                                 "image_output":  true,
+                                                                                                 "save_prefix":  true,
+                                                                                                 "torchscript_jit":  true,
+                                                                                                 "add_background":  true,
+                                                                                                 "refine_foreground":  true
+                                                                                             },
+                                                                   "version":  "7.0.1",
+                                                                   "input_ue_unconnectable":  {
+
+                                                                                              }
+                                                               },
+                                             "widget_ue_connectable":  {
+
+                                                                       }
+                                         },
+                          "size":  {
+                                       "0":  210,
+                                       "1":  150
+                                   },
+                          "widgets":  [
+                                          {
+                                              "name":  "rem_mode",
+                                              "type":  "combo",
+                                              "value":  "BEN2"
+                                          },
+                                          {
+                                              "name":  "image_output",
+                                              "type":  "combo",
+                                              "value":  "Preview"
+                                          },
+                                          {
+                                              "name":  "save_prefix",
+                                              "type":  "easyHidden",
+                                              "value":  "ComfyUI"
+                                          },
+                                          {
+                                              "name":  "torchscript_jit",
+                                              "type":  "easyHidden",
+                                              "value":  false
+                                          },
+                                          {
+                                              "name":  "add_background",
+                                              "type":  "combo",
+                                              "value":  "none"
+                                          },
+                                          {
+                                              "name":  "refine_foreground",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          }
+                                      ],
+                          "id":  "1770363899676",
+                          "category":  "默认分类",
+                          "created_at":  1770363899.6763306
+                      },
+                      {
+                          "type":  "Image Comparer (rgthree)",
+                          "title":  "图像对比",
+                          "description":  "Image Comparer (rgthree)",
+                          "properties":  {
+                                             "ue_properties":  {
+                                                                   "version":  "7.0.1",
+                                                                   "widget_ue_connectable":  {
+
+                                                                                             },
+                                                                   "input_ue_unconnectable":  {
+
+                                                                                              }
+                                                               },
+                                             "comparer_mode":  "Slide",
+                                             "cnr_id":  "rgthree-comfy",
+                                             "ver":  "b84f39c7c224de765de0b54c55b967329011819d",
+                                             "ttNbgOverride":  {
+                                                                   "color":  "#346434",
+                                                                   "groupcolor":  "#8A8"
+                                                               },
+                                             "widget_ue_connectable":  {
+
+                                                                       }
+                                         },
+                          "size":  {
+                                       "0":  390,
+                                       "1":  570
+                                   },
+                          "widgets":  [
+                                          {
+                                              "name":  "rgthree_comparer",
+                                              "type":  "custom",
+                                              "value":  {
+                                                            "images":  [
+                                                                           {
+                                                                               "name":  "A",
+                                                                               "selected":  true,
+                                                                               "url":  "/api/view?filename=rgthree.compare._temp_pepfh_00003_.png\u0026type=temp\u0026subfolder=\u0026rand=0.6073976383815711",
+                                                                               "img":  {
+
+                                                                                       }
+                                                                           },
+                                                                           {
+                                                                               "name":  "B",
+                                                                               "selected":  true,
+                                                                               "url":  "/api/view?filename=rgthree.compare._temp_pepfh_00004_.png\u0026type=temp\u0026subfolder=\u0026rand=0.7229396590216359",
+                                                                               "img":  {
+
+                                                                                       }
+                                                                           }
+                                                                       ]
+                                                        }
+                                          }
+                                      ],
+                          "id":  "1771857401527",
+                          "category":  "默认分类",
+                          "created_at":  1771857401.527786
+                      },
+                      {
+                          "type":  "ColorMatch",
+                          "title":  "追色",
+                          "description":  "ColorMatch",
+                          "properties":  {
+                                             "Node name for S\u0026R":  "ColorMatch",
+                                             "ue_properties":  {
+                                                                   "widget_ue_connectable":  {
+
+                                                                                             },
+                                                                   "input_ue_unconnectable":  {
+
+                                                                                              },
+                                                                   "version":  "7.6.2"
+                                                               },
+                                             "cnr_id":  "comfyui-kjnodes",
+                                             "ver":  "9086a8dfb6657937b8fc0501aad6b903244bd2a7"
+                                         },
+                          "size":  {
+                                       "0":  220,
+                                       "1":  130
+                                   },
+                          "widgets":  [
+                                          {
+                                              "name":  "method",
+                                              "type":  "combo",
+                                              "value":  "mkl"
+                                          },
+                                          {
+                                              "name":  "strength",
+                                              "type":  "number",
+                                              "value":  1
+                                          },
+                                          {
+                                              "name":  "multithread",
+                                              "type":  "toggle",
+                                              "value":  true
+                                          }
+                                      ],
+                          "id":  "1777111949285",
+                          "category":  "默认分类",
+                          "created_at":  1777111949.2858584
+                      },
+                      {
+                          "type":  "ProcessString",
+                          "title":  "常规处理字符🐠meeeyo.com",
+                          "description":  "ProcessString",
+                          "properties":  {
+                                             "ue_properties":  {
+                                                                   "widget_ue_connectable":  {
+
+                                                                                             },
+                                                                   "input_ue_unconnectable":  {
+
+                                                                                              }
+                                                               },
+                                             "Node name for S\u0026R":  "ProcessString"
+                                         },
+                          "size":  {
+                                       "0":  228.2779296875,
+                                       "1":  112
+                                   },
+                          "widgets":  [
+                                          {
+                                              "name":  "input_string",
+                                              "type":  "customtext",
+                                              "value":  ""
+                                          },
+                                          {
+                                              "name":  "option",
+                                              "type":  "combo",
+                                              "value":  "去空行"
+                                          }
+                                      ],
+                          "id":  "1783099124130",
+                          "category":  "默认分类",
+                          "created_at":  1783099124.130485
+                      },
+                      {
+                          "type":  "XiaozhuguangTitle",
+                          "title":  "小珠光标题",
+                          "description":  "XiaozhuguangTitle",
+                          "properties":  {
+                                             "text":  "双击编辑",
+                                             "fontSize":  50,
+                                             "fontColor":  "#ffffff",
+                                             "bgColor":  "#2a2a2a",
+                                             "borderRadius":  8,
+                                             "textAlign":  "center",
+                                             "letterSpacing":  4.5,
+                                             "lineHeight":  1.4,
+                                             "glowEnabled":  false,
+                                             "glowSize":  15,
+                                             "glowColor":  "#4CAF50",
+                                             "glowIntensity":  1,
+                                             "rainbowEnabled":  false,
+                                             "rainbowSpeed":  30,
+                                             "rainbowStyle":  "波浪"
+                                         },
+                          "size":  {
+                                       "0":  230,
+                                       "1":  82
+                                   },
+                          "widgets":  [
+
+                                      ],
+                          "id":  "1783100229747",
+                          "category":  "默认分类",
+                          "created_at":  1783100229.747716
+                      },
+                      {
+                          "type":  "ResolutionSelector",
+                          "title":  "分辨率选择器",
+                          "description":  "ResolutionSelector",
+                          "properties":  {
+                                             "Node name for S\u0026R":  "ResolutionSelector",
+                                             "cnr_id":  "comfy-core",
+                                             "ver":  "0.25.0",
+                                             "ue_properties":  {
+                                                                   "widget_ue_connectable":  {
+
+                                                                                             },
+                                                                   "version":  "7.5.2",
+                                                                   "input_ue_unconnectable":  {
+
+                                                                                              }
+                                                               }
+                                         },
+                          "size":  {
+                                       "0":  210,
+                                       "1":  126
+                                   },
+                          "widgets":  [
+                                          {
+                                              "name":  "aspect_ratio",
+                                              "type":  "combo",
+                                              "value":  "1:1 (Square)"
+                                          },
+                                          {
+                                              "name":  "megapixels",
+                                              "type":  "number",
+                                              "value":  1
+                                          },
+                                          {
+                                              "name":  "multiple",
+                                              "type":  "number",
+                                              "value":  8
+                                          }
+                                      ],
+                          "id":  "1783376788397",
+                          "category":  "默认分类",
+                          "created_at":  1783376788.3974068
+                      },
+                      {
+                          "type":  "忽略多组孤海",
+                          "title":  "忽略多组 孤海",
+                          "description":  "忽略多组孤海",
+                          "properties":  {
+                                             "ue_properties":  {
+                                                                   "widget_ue_connectable":  {
+
+                                                                                             },
+                                                                   "input_ue_unconnectable":  {
+
+                                                                                              }
+                                                               },
+                                             "Node name for S\u0026R":  "忽略多组孤海",
+                                             "guhai_ig_filter":  "",
+                                             "guhai_ig_mode":  "default",
+                                             "guhai_ig_active":  null,
+                                             "guhai_ig_active_set":  [
+
+                                                                     ],
+                                             "guhai_ig_name_color":  null,
+                                             "guhai_ig_disable":  false,
+                                             "guhai_ig_sort_order":  "position",
+                                             "guhai_ig_color_filter":  "none",
+                                             "guhai_ig_ui_scale":  1
+                                         },
+                          "size":  {
+                                       "0":  350,
+                                       "1":  64
+                                   },
+                          "widgets":  [
+                                          {
+                                              "name":  "guhai_ig",
+                                              "type":  "ig_custom",
+                                              "value":  ""
+                                          }
+                                      ],
+                          "id":  "1783727595416",
+                          "category":  "默认分类",
+                          "created_at":  1783727595.416444
+                      },
+                      {
+                          "isGroup":  true,
+                          "title":  "提示词小助手 节点",
+                          "description":  "包含 4 个已连接的节点",
+                          "nodes":  [
+                                        {
+                                            "id":  108,
+                                            "type":  "PromptTranslate",
+                                            "title":  "✨提示词翻译",
+                                            "description":  "PromptTranslate",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                },
+                                                                                     "version":  "7.5.2"
+                                                                                 },
+                                                               "Node name for S\u0026R":  "PromptTranslate"
+                                                           },
+                                            "size":  {
+                                                         "0":  290,
+                                                         "1":  146
+                                                     },
+                                            "pos":  [
+                                                        3620,
+                                                        1500
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "target_language",
+                                                                "type":  "combo",
+                                                                "value":  "English"
+                                                            },
+                                                            {
+                                                                "name":  "translate_service",
+                                                                "type":  "combo",
+                                                                "value":  "百度翻译"
+                                                            },
+                                                            {
+                                                                "name":  "ollama_auto_unload",
+                                                                "type":  "toggle",
+                                                                "value":  true
+                                                            },
+                                                            {
+                                                                "name":  "seed",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            },
+                                                            {
+                                                                "name":  "control_after_generate",
+                                                                "type":  "combo",
+                                                                "value":  "randomize"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                0,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  109,
+                                            "type":  "ImageCaptionNode",
+                                            "title":  "✨图像反推提示词",
+                                            "description":  "ImageCaptionNode",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                },
+                                                                                     "version":  "7.5.2"
+                                                                                 },
+                                                               "Node name for S\u0026R":  "ImageCaptionNode"
+                                                           },
+                                            "size":  {
+                                                         "0":  290,
+                                                         "1":  290
+                                                     },
+                                            "pos":  [
+                                                        3920,
+                                                        1500
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "rule",
+                                                                "type":  "combo",
+                                                                "value":  "像素级描述（by:阿丹）"
+                                                            },
+                                                            {
+                                                                "name":  "custom_rule",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "custom_rule_content",
+                                                                "type":  "customtext",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "user_prompt",
+                                                                "type":  "customtext",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "vlm_service",
+                                                                "type":  "combo",
+                                                                "value":  "智谱/glm-4.6v-flash"
+                                                            },
+                                                            {
+                                                                "name":  "ollama_auto_unload",
+                                                                "type":  "toggle",
+                                                                "value":  true
+                                                            },
+                                                            {
+                                                                "name":  "seed",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            },
+                                                            {
+                                                                "name":  "control_after_generate",
+                                                                "type":  "combo",
+                                                                "value":  "randomize"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                300,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  110,
+                                            "type":  "PromptExpand",
+                                            "title":  "✨提示词优化",
+                                            "description":  "PromptExpand",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                },
+                                                                                     "version":  "7.5.2"
+                                                                                 },
+                                                               "Node name for S\u0026R":  "PromptExpand"
+                                                           },
+                                            "size":  {
+                                                         "0":  290,
+                                                         "1":  270
+                                                     },
+                                            "pos":  [
+                                                        3620,
+                                                        1650
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "rule",
+                                                                "type":  "combo",
+                                                                "value":  "扩写-通用"
+                                                            },
+                                                            {
+                                                                "name":  "custom_rule",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "custom_rule_content",
+                                                                "type":  "customtext",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "user_prompt",
+                                                                "type":  "customtext",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "llm_service",
+                                                                "type":  "combo",
+                                                                "value":  "智谱/glm-4.6v-flash"
+                                                            },
+                                                            {
+                                                                "name":  "ollama_auto_unload",
+                                                                "type":  "toggle",
+                                                                "value":  true
+                                                            },
+                                                            {
+                                                                "name":  "seed",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            },
+                                                            {
+                                                                "name":  "control_after_generate",
+                                                                "type":  "combo",
+                                                                "value":  "randomize"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                0,
+                                                                150
+                                                            ]
+                                        },
+                                        {
+                                            "id":  111,
+                                            "type":  "VideoCaptionNode",
+                                            "title":  "✨视频反推提示词",
+                                            "description":  "VideoCaptionNode",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                },
+                                                                                     "version":  "7.5.2"
+                                                                                 },
+                                                               "Node name for S\u0026R":  "VideoCaptionNode"
+                                                           },
+                                            "size":  {
+                                                         "0":  290,
+                                                         "1":  392
+                                                     },
+                                            "pos":  [
+                                                        4220,
+                                                        1500
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "rule",
+                                                                "type":  "combo",
+                                                                "value":  "视频复刻与重构"
+                                                            },
+                                                            {
+                                                                "name":  "custom_rule",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "custom_rule_content",
+                                                                "type":  "customtext",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "user_prompt",
+                                                                "type":  "customtext",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "sampling_mode",
+                                                                "type":  "combo",
+                                                                "value":  "智谱/glm-4.6v-flash"
+                                                            },
+                                                            {
+                                                                "name":  "frame_count",
+                                                                "type":  "number",
+                                                                "value":  "Auto (Uniform)"
+                                                            },
+                                                            {
+                                                                "name":  "manual_indices",
+                                                                "type":  "text",
+                                                                "value":  5
+                                                            },
+                                                            {
+                                                                "name":  "vlm_service",
+                                                                "type":  "combo",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "ollama_auto_unload",
+                                                                "type":  "toggle",
+                                                                "value":  true
+                                                            },
+                                                            {
+                                                                "name":  "seed",
+                                                                "type":  "number",
+                                                                "value":  null
+                                                            },
+                                                            {
+                                                                "name":  "control_after_generate",
+                                                                "type":  "combo",
+                                                                "value":  "randomize"
+                                                            },
+                                                            {
+                                                                "name":  "🎬选取反推帧",
+                                                                "type":  "button",
+                                                                "value":  null
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                600,
+                                                                0
+                                                            ]
+                                        }
+                                    ],
+                          "connections":  [
+
+                                          ],
+                          "nodeCount":  4,
+                          "id":  "1783727940332",
+                          "category":  "节点组",
+                          "created_at":  1783727940.3322961
+                      },
+                      {
+                          "isGroup":  true,
+                          "title":  "保存工作流",
+                          "description":  "包含 3 个已连接的节点",
+                          "nodes":  [
+                                        {
+                                            "id":  112,
+                                            "type":  "SaveImage",
+                                            "title":  "保存图像",
+                                            "description":  "SaveImage",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                },
+                                                                                     "version":  "7.5.2"
+                                                                                 },
+                                                               "Node name for S\u0026R":  "SaveImage"
+                                                           },
+                                            "size":  {
+                                                         "0":  210,
+                                                         "1":  330
+                                                     },
+                                            "pos":  [
+                                                        4200,
+                                                        1390
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "filename_prefix",
+                                                                "type":  "text",
+                                                                "value":  "%date:yyyy-MM-dd%\\%date:yyyy-MM-dd% %date:hh-mm-ss%"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                610,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  113,
+                                            "type":  "LayerUtility: ImageScaleByAspectRatio V2",
+                                            "title":  "图层工具：按宽高比缩放 V2",
+                                            "description":  "LayerUtility: ImageScaleByAspectRatio V2",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "version":  "7.5.1",
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "LayerUtility: ImageScaleByAspectRatio V2",
+                                                               "cnr_id":  "comfyui_layerstyle",
+                                                               "ver":  "42ccdd8f75ab312285eaa77073a5cc20bdba484c"
+                                                           },
+                                            "size":  {
+                                                         "0":  310,
+                                                         "1":  330
+                                                     },
+                                            "pos":  [
+                                                        3880,
+                                                        1390
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "aspect_ratio",
+                                                                "type":  "combo",
+                                                                "value":  "original"
+                                                            },
+                                                            {
+                                                                "name":  "proportional_width",
+                                                                "type":  "number",
+                                                                "value":  1
+                                                            },
+                                                            {
+                                                                "name":  "proportional_height",
+                                                                "type":  "number",
+                                                                "value":  1
+                                                            },
+                                                            {
+                                                                "name":  "fit",
+                                                                "type":  "combo",
+                                                                "value":  "letterbox"
+                                                            },
+                                                            {
+                                                                "name":  "method",
+                                                                "type":  "combo",
+                                                                "value":  "lanczos"
+                                                            },
+                                                            {
+                                                                "name":  "round_to_multiple",
+                                                                "type":  "combo",
+                                                                "value":  "8"
+                                                            },
+                                                            {
+                                                                "name":  "scale_to_side",
+                                                                "type":  "combo",
+                                                                "value":  "longest"
+                                                            },
+                                                            {
+                                                                "name":  "scale_to_length",
+                                                                "type":  "number",
+                                                                "value":  150
+                                                            },
+                                                            {
+                                                                "name":  "background_color",
+                                                                "type":  "text",
+                                                                "value":  "#000000"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                290,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  114,
+                                            "type":  "LoadImage",
+                                            "title":  "加载图像",
+                                            "description":  "LoadImage",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "LoadImage",
+                                                               "#sdppp_variant":  "default",
+                                                               "#sdppp_simple_content":  "canvas",
+                                                               "#sdppp_simple_mask":  "canvas",
+                                                               "#sdppp_simple_boundary":  "canvas",
+                                                               "#sdppp_label":  ""
+                                                           },
+                                            "size":  {
+                                                         "0":  270,
+                                                         "1":  330
+                                                     },
+                                            "pos":  [
+                                                        3590,
+                                                        1390
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "image",
+                                                                "type":  "combo",
+                                                                "value":  "最 0.jpg"
+                                                            },
+                                                            {
+                                                                "name":  "upload",
+                                                                "type":  "button",
+                                                                "value":  "image"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                0,
+                                                                0
+                                                            ]
+                                        }
+                                    ],
+                          "connections":  [
+                                              {
+                                                  "from_node_index":  1,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  0,
+                                                  "to_slot":  0
+                                              },
+                                              {
+                                                  "from_node_index":  2,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  1,
+                                                  "to_slot":  0
+                                              }
+                                          ],
+                          "nodeCount":  3,
+                          "id":  "1783727962832",
+                          "category":  "节点组",
+                          "created_at":  1783727962.8325784
+                      },
+                      {
+                          "isGroup":  true,
+                          "title":  "多行文本+逐行输出",
+                          "description":  "包含 7 个已连接的节点",
+                          "nodes":  [
+                                        {
+                                            "id":  119,
+                                            "type":  "PrimitiveStringMultiline",
+                                            "title":  "字符串（多行）",
+                                            "description":  "PrimitiveStringMultiline",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "PrimitiveStringMultiline"
+                                                           },
+                                            "size":  {
+                                                         "0":  520,
+                                                         "1":  830
+                                                     },
+                                            "pos":  [
+                                                        3110,
+                                                        1900
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "value",
+                                                                "type":  "customtext",
+                                                                "value":  "三分法构图，全身人像。年轻貌美的亚洲女性随性驻足式站立，双脚自然分开踩在前景粗糙的黑色多孔火山岩上，双手自然下垂，面带温柔甜美的微笑，眼神清澈直视镜头，深棕色长发柔顺垂落肩头；身着一件米白色的细吊带连衣裙，裙身布满精致的细微波点纹理，胸口处采用褶皱收腰设计并系有同色系蝴蝶结，下摆为蓬松的 A 字短裙微微扬起，脚踩一双白色高筒系带马丁靴。背景重构为左侧倾斜生长的翠绿棕榈叶形成框架式前景，右侧是层次丰富的蔚蓝大海与翻滚的白色浪花，远处海天交接线清晰；盛夏晴朗白天，侧前方高明度自然光照射，人物面部与肢体呈现柔和高光，阴影清晰立体，蓝白黑主色调饱和度高，画面清新明亮充满夏日活力。\n\n对角线构图，中景侧拍。年轻貌美的亚洲女性动态抓拍式小幅度转身迈步，身体微倾，发丝随风微扬，嘴角挂着似笑非笑的温柔浅笑，眼神松弛看向斜前方；身着一件米白色的细吊带连衣裙，裙身布满精致的细微波点纹理，胸口处采用褶皱收腰设计并系有同色系蝴蝶结，下摆为蓬松的 A 字短裙随动作轻盈摆动，脚踩一双白色高筒系带马丁靴稳稳踏在黑色火山岩缝隙间。场景调度为低角度仰视，脚下是延伸向远方的洁白沙滩与散布的黑色岩石群，背景虚化处理的海浪泡沫形成引导线，上方是通透湛蓝天幕与大朵蓬松白色积云；光线从侧后方勾勒出发丝轮廓光与裙摆边缘，冷暖对比鲜明，胶片质感细腻，营造出时尚博主般的精致度假氛围。\n\n对称构图，全身俯拍视角。年轻貌美的亚洲女性坐姿松弛式坐在层层叠叠的黑色火山岩台阶上，双腿自然交叉伸展，单手轻抚裙摆，低头浅笑，神情慵懒而自信，深棕色长发自然披散；身着一件米白色的细吊带连衣裙，裙身布满精致的细微波点纹理，胸口处采用褶皱收腰设计并系有同色系蝴蝶结，凸显纤细腰身，下摆为蓬松的 A 字短裙铺散在岩石表面，脚踩一双白色高筒系带马丁靴。环境重组为环绕式的热带植被与近景清澈见底的海水涟漪，白色沙滩如丝带般缠绕在黑色岩石周围，天空占据画面上方三分之一，漂浮着巨大的白色积云；正午阳光垂直洒落，光影反差强烈但过渡自然，高饱和度蓝白配色突显“甜酷”风格，画面具有强烈的几何美感与叙事张力。\n\n前景虚化构图，过肩镜头视角。年轻貌美的亚洲女性倚靠互动式侧身倚靠在巨大的黑色火山岩柱旁，身体微倾，单手撑靠岩石，头部微侧露出温柔浅笑，眼神望向远方海平线；身着一件米白色的细吊带连衣裙，裙身布满精致的细微波点纹理，胸口处采用褶皱收腰设计并系有同色系蝴蝶结，下摆为蓬松的 A 字短裙随风轻扬，脚踩一双白色高筒系带马丁靴立于沙石交界处。背景重构为远景中若隐若现的热带岛屿轮廓与碧蓝海水，左侧高耸的椰子树影投射在沙滩上形成斑驳光影，前景利用模糊的绿色蕨类植物增加画面层次；侧前方充足阳光照亮人物面部与服装细节，阴影柔和不生硬，整体色调以明亮的蓝、纯净的白与深邃的黑为主，呈现出高级时尚大片的清透质感。"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                0,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  120,
+                                            "type":  "Text Load Line From File",
+                                            "title":  "文本按行加载",
+                                            "description":  "Text Load Line From File",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "Text Load Line From File"
+                                                           },
+                                            "size":  {
+                                                         "0":  230,
+                                                         "1":  180
+                                                     },
+                                            "pos":  [
+                                                        3660,
+                                                        2100
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "file_path",
+                                                                "type":  "text",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "dictionary_name",
+                                                                "type":  "text",
+                                                                "value":  "[filename]"
+                                                            },
+                                                            {
+                                                                "name":  "label",
+                                                                "type":  "text",
+                                                                "value":  "TextBatch"
+                                                            },
+                                                            {
+                                                                "name":  "mode",
+                                                                "type":  "combo",
+                                                                "value":  "automatic"
+                                                            },
+                                                            {
+                                                                "name":  "index",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                550,
+                                                                200
+                                                            ]
+                                        },
+                                        {
+                                            "id":  121,
+                                            "type":  "ShowText|pysssss",
+                                            "title":  "Show Text 🐍",
+                                            "description":  "ShowText|pysssss",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "ShowText|pysssss"
+                                                           },
+                                            "size":  {
+                                                         "0":  300,
+                                                         "1":  380
+                                                     },
+                                            "pos":  [
+                                                        4450,
+                                                        1900
+                                                    ],
+                                            "widgets":  [
+
+                                                        ],
+                                            "relativePos":  [
+                                                                1340,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  122,
+                                            "type":  "ProcessString",
+                                            "title":  "常规处理字符🐠meeeyo.com",
+                                            "description":  "ProcessString",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "ProcessString"
+                                                           },
+                                            "size":  {
+                                                         "0":  230,
+                                                         "1":  120
+                                                     },
+                                            "pos":  [
+                                                        3660,
+                                                        1900
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "input_string",
+                                                                "type":  "customtext",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "option",
+                                                                "type":  "combo",
+                                                                "value":  "去空行"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                550,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  123,
+                                            "type":  "easy promptLine",
+                                            "title":  "提示词行",
+                                            "description":  "easy promptLine",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "easy promptLine"
+                                                           },
+                                            "size":  {
+                                                         "0":  210,
+                                                         "1":  210
+                                                     },
+                                            "pos":  [
+                                                        3930,
+                                                        2110
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "prompt",
+                                                                "type":  "customtext",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "start_index",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            },
+                                                            {
+                                                                "name":  "max_rows",
+                                                                "type":  "number",
+                                                                "value":  50
+                                                            },
+                                                            {
+                                                                "name":  "remove_empty_lines",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "get values from COMBO link",
+                                                                "type":  "button",
+                                                                "value":  ""
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                820,
+                                                                210
+                                                            ]
+                                        },
+                                        {
+                                            "id":  124,
+                                            "type":  "Text Concatenate",
+                                            "title":  "文本连锁",
+                                            "description":  "Text Concatenate",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "Text Concatenate"
+                                                           },
+                                            "size":  {
+                                                         "0":  230,
+                                                         "1":  150
+                                                     },
+                                            "pos":  [
+                                                        4190,
+                                                        1900
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "delimiter",
+                                                                "type":  "text",
+                                                                "value":  ", "
+                                                            },
+                                                            {
+                                                                "name":  "clean_whitespace",
+                                                                "type":  "combo",
+                                                                "value":  "true"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                1080,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  125,
+                                            "type":  "PrimitiveStringMultiline",
+                                            "title":  "字符串（多行）",
+                                            "description":  "PrimitiveStringMultiline",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "PrimitiveStringMultiline"
+                                                           },
+                                            "size":  {
+                                                         "0":  230,
+                                                         "1":  150
+                                                     },
+                                            "pos":  [
+                                                        3930,
+                                                        1900
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "value",
+                                                                "type":  "customtext",
+                                                                "value":  "\n严格参考图1人物和服装特征，参考图2作为背景，根据以下内容描述，大幅度改变拍摄角度和人物姿态和表情。\n"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                820,
+                                                                0
+                                                            ]
+                                        }
+                                    ],
+                          "connections":  [
+                                              {
+                                                  "from_node_index":  0,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  3,
+                                                  "to_slot":  0
+                                              },
+                                              {
+                                                  "from_node_index":  3,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  1,
+                                                  "to_slot":  0
+                                              },
+                                              {
+                                                  "from_node_index":  3,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  4,
+                                                  "to_slot":  0
+                                              },
+                                              {
+                                                  "from_node_index":  4,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  5,
+                                                  "to_slot":  1
+                                              },
+                                              {
+                                                  "from_node_index":  5,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  2,
+                                                  "to_slot":  0
+                                              },
+                                              {
+                                                  "from_node_index":  6,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  5,
+                                                  "to_slot":  0
+                                              }
+                                          ],
+                          "nodeCount":  7,
+                          "id":  "1783728064819",
+                          "category":  "节点组",
+                          "created_at":  1783728064.819962
+                      },
+                      {
+                          "isGroup":  true,
+                          "title":  "Segformer 自动遮罩",
+                          "description":  "包含 7 个已连接的节点",
+                          "nodes":  [
+                                        {
+                                            "id":  126,
+                                            "type":  "LoadImage",
+                                            "title":  "加载图像",
+                                            "description":  "LoadImage",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "LoadImage",
+                                                               "#sdppp_variant":  "default",
+                                                               "#sdppp_simple_content":  "canvas",
+                                                               "#sdppp_simple_mask":  "canvas",
+                                                               "#sdppp_simple_boundary":  "canvas",
+                                                               "#sdppp_label":  ""
+                                                           },
+                                            "size":  {
+                                                         "0":  290,
+                                                         "1":  470
+                                                     },
+                                            "pos":  [
+                                                        2960,
+                                                        2140
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "image",
+                                                                "type":  "combo",
+                                                                "value":  "0 (1).jpg"
+                                                            },
+                                                            {
+                                                                "name":  "upload",
+                                                                "type":  "button",
+                                                                "value":  "image"
+                                                            },
+                                                            {
+                                                                "name":  "$$canvas-image-preview",
+                                                                "type":  "custom",
+                                                                "value":  ""
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                0,
+                                                                120
+                                                            ]
+                                        },
+                                        {
+                                            "id":  127,
+                                            "type":  "LayerMask: SegformerClothesPipelineLoader",
+                                            "title":  "图层遮罩：Segformer 服装框架",
+                                            "description":  "LayerMask: SegformerClothesPipelineLoader",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "LayerMask: SegformerClothesPipelineLoader"
+                                                           },
+                                            "size":  {
+                                                         "0":  240,
+                                                         "1":  470
+                                                     },
+                                            "pos":  [
+                                                        3560,
+                                                        2140
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "model",
+                                                                "type":  "combo",
+                                                                "value":  "segformer_b3_clothes"
+                                                            },
+                                                            {
+                                                                "name":  "face",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "hair",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "hat",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "sunglass",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "left_arm",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "right_arm",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "left_leg",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "right_leg",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "left_shoe",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "right_shoe",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "upper_clothes",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "skirt",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "pants",
+                                                                "type":  "toggle",
+                                                                "value":  true
+                                                            },
+                                                            {
+                                                                "name":  "dress",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "belt",
+                                                                "type":  "toggle",
+                                                                "value":  true
+                                                            },
+                                                            {
+                                                                "name":  "bag",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "scarf",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                600,
+                                                                120
+                                                            ]
+                                        },
+                                        {
+                                            "id":  128,
+                                            "type":  "LayerMask: SegformerUltraV2",
+                                            "title":  "图层遮罩：Segformer Ultra V2",
+                                            "description":  "LayerMask: SegformerUltraV2",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "LayerMask: SegformerUltraV2"
+                                                           },
+                                            "size":  {
+                                                         "0":  240,
+                                                         "1":  250
+                                                     },
+                                            "pos":  [
+                                                        3810,
+                                                        2140
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "detail_method",
+                                                                "type":  "combo",
+                                                                "value":  "VITMatte"
+                                                            },
+                                                            {
+                                                                "name":  "detail_erode",
+                                                                "type":  "number",
+                                                                "value":  10
+                                                            },
+                                                            {
+                                                                "name":  "detail_dilate",
+                                                                "type":  "number",
+                                                                "value":  10
+                                                            },
+                                                            {
+                                                                "name":  "black_point",
+                                                                "type":  "slider",
+                                                                "value":  0.01
+                                                            },
+                                                            {
+                                                                "name":  "white_point",
+                                                                "type":  "slider",
+                                                                "value":  0.99
+                                                            },
+                                                            {
+                                                                "name":  "process_detail",
+                                                                "type":  "toggle",
+                                                                "value":  true
+                                                            },
+                                                            {
+                                                                "name":  "device",
+                                                                "type":  "combo",
+                                                                "value":  "cuda"
+                                                            },
+                                                            {
+                                                                "name":  "max_megapixels",
+                                                                "type":  "number",
+                                                                "value":  2
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                850,
+                                                                120
+                                                            ]
+                                        },
+                                        {
+                                            "id":  129,
+                                            "type":  "MaskFastGrow",
+                                            "title":  "Mask Grow Fast",
+                                            "description":  "MaskFastGrow",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "MaskFastGrow"
+                                                           },
+                                            "size":  {
+                                                         "0":  240,
+                                                         "1":  180
+                                                     },
+                                            "pos":  [
+                                                        3810,
+                                                        2430
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "invert_mask",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "grow",
+                                                                "type":  "number",
+                                                                "value":  5
+                                                            },
+                                                            {
+                                                                "name":  "blur",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            },
+                                                            {
+                                                                "name":  "low_limit",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            },
+                                                            {
+                                                                "name":  "high_limit",
+                                                                "type":  "number",
+                                                                "value":  1
+                                                            },
+                                                            {
+                                                                "name":  "enabled",
+                                                                "type":  "toggle",
+                                                                "value":  true
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                850,
+                                                                410
+                                                            ]
+                                        },
+                                        {
+                                            "id":  130,
+                                            "type":  "ImageAndMaskPreview",
+                                            "title":  "Image And Mask Preview (Swwan)",
+                                            "description":  "ImageAndMaskPreview",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "ImageAndMaskPreview"
+                                                           },
+                                            "size":  {
+                                                         "0":  269.1021484375,
+                                                         "1":  126
+                                                     },
+                                            "pos":  [
+                                                        4060,
+                                                        2140
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "mask_opacity",
+                                                                "type":  "number",
+                                                                "value":  1
+                                                            },
+                                                            {
+                                                                "name":  "mask_color",
+                                                                "type":  "text",
+                                                                "value":  "255, 0, 0"
+                                                            },
+                                                            {
+                                                                "name":  "pass_through",
+                                                                "type":  "toggle",
+                                                                "value":  true
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                1100,
+                                                                120
+                                                            ]
+                                        },
+                                        {
+                                            "id":  131,
+                                            "type":  "SaveImageJPG_GH",
+                                            "title":  "保存图像JPG 孤海",
+                                            "description":  "SaveImageJPG_GH",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "SaveImageJPG_GH"
+                                                           },
+                                            "size":  {
+                                                         "0":  290,
+                                                         "1":  470
+                                                     },
+                                            "pos":  [
+                                                        3260,
+                                                        2140
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "文件名前缀",
+                                                                "type":  "text",
+                                                                "value":  "%date:yyyy-MM-dd%\\%date:yyyy-MM-dd% %time:hh-mm-ss%"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                300,
+                                                                120
+                                                            ]
+                                        },
+                                        {
+                                            "id":  132,
+                                            "type":  "XiaozhuguangTitle",
+                                            "title":  "小珠光标题",
+                                            "description":  "XiaozhuguangTitle",
+                                            "properties":  {
+                                                               "text":  "双击编辑",
+                                                               "fontSize":  14,
+                                                               "fontColor":  "#ffffff",
+                                                               "bgColor":  "#2a2a2a",
+                                                               "borderRadius":  3,
+                                                               "textAlign":  "center",
+                                                               "letterSpacing":  0,
+                                                               "lineHeight":  1.4,
+                                                               "glowEnabled":  false,
+                                                               "glowSize":  15,
+                                                               "glowColor":  "#4CAF50",
+                                                               "glowIntensity":  1,
+                                                               "bgEnabled":  false,
+                                                               "rainbowEnabled":  false,
+                                                               "rainbowSpeed":  30,
+                                                               "rainbowStyle":  "波浪"
+                                                           },
+                                            "size":  {
+                                                         "0":  60,
+                                                         "1":  18
+                                                     },
+                                            "pos":  [
+                                                        2960,
+                                                        2020
+                                                    ],
+                                            "widgets":  [
+
+                                                        ],
+                                            "relativePos":  [
+                                                                0,
+                                                                0
+                                                            ]
+                                        }
+                                    ],
+                          "connections":  [
+                                              {
+                                                  "from_node_index":  0,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  2,
+                                                  "to_slot":  0
+                                              },
+                                              {
+                                                  "from_node_index":  0,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  4,
+                                                  "to_slot":  0
+                                              },
+                                              {
+                                                  "from_node_index":  1,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  2,
+                                                  "to_slot":  1
+                                              },
+                                              {
+                                                  "from_node_index":  2,
+                                                  "from_slot":  1,
+                                                  "to_node_index":  3,
+                                                  "to_slot":  0
+                                              },
+                                              {
+                                                  "from_node_index":  3,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  4,
+                                                  "to_slot":  1
+                                              },
+                                              {
+                                                  "from_node_index":  4,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  5,
+                                                  "to_slot":  0
+                                              }
+                                          ],
+                          "nodeCount":  7,
+                          "id":  "1783728100399",
+                          "category":  "节点组",
+                          "created_at":  1783728100.3997247
+                      },
+                      {
+                          "isGroup":  true,
+                          "title":  "Qwen3.5 快速反推",
+                          "description":  "包含 5 个已连接的节点",
+                          "nodes":  [
+                                        {
+                                            "id":  133,
+                                            "type":  "MarkdownNote",
+                                            "title":  "Markdown Note",
+                                            "description":  "MarkdownNote",
+                                            "properties":  {
+
+                                                           },
+                                            "size":  {
+                                                         "0":  290,
+                                                         "1":  90
+                                                     },
+                                            "pos":  [
+                                                        3730,
+                                                        1510
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "text",
+                                                                "type":  "MARKDOWN",
+                                                                "value":  "## Qwen3.5 快速反推"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                0,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  134,
+                                            "type":  "llama_cpp_instruct_adv",
+                                            "title":  "Llama-cpp Instruct",
+                                            "description":  "llama_cpp_instruct_adv",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "llama_cpp_instruct_adv"
+                                                           },
+                                            "size":  {
+                                                         "0":  270,
+                                                         "1":  600
+                                                     },
+                                            "pos":  [
+                                                        4350,
+                                                        1640
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "preset_prompt",
+                                                                "type":  "combo",
+                                                                "value":  "Prompt Style - Detailed"
+                                                            },
+                                                            {
+                                                                "name":  "custom_prompt",
+                                                                "type":  "customtext",
+                                                                "value":  "用中文详细描述图片，不要带任何解释和说明性的文字，仅输出最后的prompt"
+                                                            },
+                                                            {
+                                                                "name":  "system_prompt",
+                                                                "type":  "customtext",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "inference_mode",
+                                                                "type":  "combo",
+                                                                "value":  "one by one"
+                                                            },
+                                                            {
+                                                                "name":  "max_frames",
+                                                                "type":  "number",
+                                                                "value":  24
+                                                            },
+                                                            {
+                                                                "name":  "max_size",
+                                                                "type":  "number",
+                                                                "value":  256
+                                                            },
+                                                            {
+                                                                "name":  "seed",
+                                                                "type":  "number",
+                                                                "value":  3654654
+                                                            },
+                                                            {
+                                                                "name":  "control_after_generate",
+                                                                "type":  "combo",
+                                                                "value":  "fixed"
+                                                            },
+                                                            {
+                                                                "name":  "force_offload",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "save_states",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                620,
+                                                                130
+                                                            ]
+                                        },
+                                        {
+                                            "id":  135,
+                                            "type":  "llama_cpp_model_loader",
+                                            "title":  "Llama-cpp Model Loader",
+                                            "description":  "llama_cpp_model_loader",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "llama_cpp_model_loader"
+                                                           },
+                                            "size":  {
+                                                         "0":  290,
+                                                         "1":  210
+                                                     },
+                                            "pos":  [
+                                                        3730,
+                                                        1640
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "model",
+                                                                "type":  "combo",
+                                                                "value":  "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q8_0.gguf"
+                                                            },
+                                                            {
+                                                                "name":  "mmproj",
+                                                                "type":  "combo",
+                                                                "value":  "mmproj-Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-BF16.gguf"
+                                                            },
+                                                            {
+                                                                "name":  "chat_handler",
+                                                                "type":  "combo",
+                                                                "value":  "Qwen3.5"
+                                                            },
+                                                            {
+                                                                "name":  "n_ctx",
+                                                                "type":  "number",
+                                                                "value":  8192
+                                                            },
+                                                            {
+                                                                "name":  "vram_limit",
+                                                                "type":  "number",
+                                                                "value":  -1
+                                                            },
+                                                            {
+                                                                "name":  "image_min_tokens",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            },
+                                                            {
+                                                                "name":  "image_max_tokens",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                0,
+                                                                130
+                                                            ]
+                                        },
+                                        {
+                                            "id":  136,
+                                            "type":  "llama_cpp_parameters",
+                                            "title":  "Llama-cpp Parameters",
+                                            "description":  "llama_cpp_parameters",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "llama_cpp_parameters"
+                                                           },
+                                            "size":  {
+                                                         "0":  290,
+                                                         "1":  350
+                                                     },
+                                            "pos":  [
+                                                        3730,
+                                                        1890
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "max_tokens",
+                                                                "type":  "number",
+                                                                "value":  1024
+                                                            },
+                                                            {
+                                                                "name":  "top_k",
+                                                                "type":  "number",
+                                                                "value":  30
+                                                            },
+                                                            {
+                                                                "name":  "top_p",
+                                                                "type":  "number",
+                                                                "value":  0.9
+                                                            },
+                                                            {
+                                                                "name":  "min_p",
+                                                                "type":  "number",
+                                                                "value":  0.05
+                                                            },
+                                                            {
+                                                                "name":  "typical_p",
+                                                                "type":  "number",
+                                                                "value":  1
+                                                            },
+                                                            {
+                                                                "name":  "temperature",
+                                                                "type":  "number",
+                                                                "value":  0.8
+                                                            },
+                                                            {
+                                                                "name":  "repeat_penalty",
+                                                                "type":  "number",
+                                                                "value":  1
+                                                            },
+                                                            {
+                                                                "name":  "frequency_penalty",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            },
+                                                            {
+                                                                "name":  "present_penalty",
+                                                                "type":  "number",
+                                                                "value":  1
+                                                            },
+                                                            {
+                                                                "name":  "mirostat_mode",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            },
+                                                            {
+                                                                "name":  "mirostat_eta",
+                                                                "type":  "number",
+                                                                "value":  0.1
+                                                            },
+                                                            {
+                                                                "name":  "mirostat_tau",
+                                                                "type":  "number",
+                                                                "value":  5
+                                                            },
+                                                            {
+                                                                "name":  "state_uid",
+                                                                "type":  "number",
+                                                                "value":  -1
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                0,
+                                                                380
+                                                            ]
+                                        },
+                                        {
+                                            "id":  137,
+                                            "type":  "CR Prompt Text",
+                                            "title":  "⚙️ CR Prompt Text",
+                                            "description":  "CR Prompt Text",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "CR Prompt Text"
+                                                           },
+                                            "size":  {
+                                                         "0":  310,
+                                                         "1":  600
+                                                     },
+                                            "pos":  [
+                                                        4030,
+                                                        1640
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "prompt",
+                                                                "type":  "customtext",
+                                                                "value":  "你是一位专业的AI生图提示词与图片反推工程师，专注于为Qwen-Image、Qwen-Edit等主流AI绘图工具生成精准、详尽的提示词。核心职责是根据用户需求或参考图片，输出能完整复现画面细节的中文描述。\n\n格式绝对纯净：严禁输出 Markdown 符号（如*号、#号）、严禁中英对照括号、严禁输出任何解释或前缀。\n\n分析重点：\n1. 主体描述（按重要性排序）：人物或物体的具体类型和特征 / 准确的外观描述（发型、服装细节、表情、眼神等） / 清晰的姿势和动作\n2. 场景要素：具体的场景类型 / 环境细节 / 主体和空间关系 / 天气和时间状态\n3. 视觉风格：整体艺术风格 / 画面质感 / 特殊效果\n4. 技术特征：构图方式 / 光影效果 / 色彩特点 / 渲染风格\n5. 文字：排除AI生图相关文字和水印文字。\n"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                300,
+                                                                130
+                                                            ]
+                                        }
+                                    ],
+                          "connections":  [
+                                              {
+                                                  "from_node_index":  2,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  1,
+                                                  "to_slot":  0
+                                              },
+                                              {
+                                                  "from_node_index":  3,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  1,
+                                                  "to_slot":  1
+                                              },
+                                              {
+                                                  "from_node_index":  4,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  1,
+                                                  "to_slot":  6
+                                              }
+                                          ],
+                          "nodeCount":  5,
+                          "id":  "1783728151050",
+                          "category":  "节点组",
+                          "created_at":  1783728151.050526
+                      },
+                      {
+                          "type":  "AnySwitch",
+                          "title":  "万能判断切换 (Any Switch)",
+                          "description":  "AnySwitch",
+                          "properties":  {
+                                             "ue_properties":  {
+                                                                   "widget_ue_connectable":  {
+
+                                                                                             },
+                                                                   "input_ue_unconnectable":  {
+
+                                                                                              }
+                                                               },
+                                             "Node name for S\u0026R":  "AnySwitch"
+                                         },
+                          "size":  {
+                                       "0":  220,
+                                       "1":  50
+                                   },
+                          "widgets":  [
+
+                                      ],
+                          "id":  "1783827037586",
+                          "category":  "默认分类",
+                          "created_at":  1783827037.5863507
+                      },
+                      {
+                          "isGroup":  true,
+                          "title":  "保存 JPG+PNG",
+                          "description":  "包含 2 个已连接的节点",
+                          "nodes":  [
+                                        {
+                                            "id":  1236,
+                                            "type":  "SaveImageJPG_GH",
+                                            "title":  "保存图像JPG 孤海",
+                                            "description":  "SaveImageJPG_GH",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "SaveImageJPG_GH"
+                                                           },
+                                            "size":  {
+                                                         "0":  290,
+                                                         "1":  370
+                                                     },
+                                            "pos":  [
+                                                        -3030,
+                                                        600
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "文件名前缀",
+                                                                "type":  "text",
+                                                                "value":  "%date:yyyy-MM-dd%\\%date:yyyy-MM-dd% %time:hh-mm-ss%"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                0,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  1237,
+                                            "type":  "SaveImage",
+                                            "title":  "保存图像",
+                                            "description":  "SaveImage",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "SaveImage"
+                                                           },
+                                            "size":  {
+                                                         "0":  290,
+                                                         "1":  370
+                                                     },
+                                            "pos":  [
+                                                        -2730,
+                                                        600
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "filename_prefix",
+                                                                "type":  "text",
+                                                                "value":  "%date:yyyy-MM-dd%\\%date:yyyy-MM-dd% %date:hh-mm-ss%"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                300,
+                                                                0
+                                                            ]
+                                        }
+                                    ],
+                          "connections":  [
+
+                                          ],
+                          "nodeCount":  2,
+                          "id":  "1785166238921",
+                          "category":  "节点组",
+                          "created_at":  1785166238.921531
+                      },
+                      {
+                          "isGroup":  true,
+                          "title":  "单张/批量 万能切换",
+                          "description":  "包含 4 个已连接的节点",
+                          "nodes":  [
+                                        {
+                                            "id":  1213,
+                                            "type":  "LoadAndResizeImage",
+                                            "title":  "Load And Resize Image (Swwan)",
+                                            "description":  "LoadAndResizeImage",
+                                            "properties":  {
+                                                               "Node name for S\u0026R":  "LoadAndResizeImage",
+                                                               "cnr_id":  "comfyui-kjnodes",
+                                                               "ver":  "e27a505b3ba6ce42687fe00500deda103d9d6071",
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                },
+                                                                                     "version":  "7.8"
+                                                                                 }
+                                                           },
+                                            "size":  {
+                                                         "0":  260,
+                                                         "1":  580
+                                                     },
+                                            "pos":  [
+                                                        -1100,
+                                                        130
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "image",
+                                                                "type":  "combo",
+                                                                "value":  "2025-09-24 09-50-27_00007_.png++.png"
+                                                            },
+                                                            {
+                                                                "name":  "resize",
+                                                                "type":  "toggle",
+                                                                "value":  false
+                                                            },
+                                                            {
+                                                                "name":  "width",
+                                                                "type":  "number",
+                                                                "value":  1024
+                                                            },
+                                                            {
+                                                                "name":  "height",
+                                                                "type":  "number",
+                                                                "value":  1024
+                                                            },
+                                                            {
+                                                                "name":  "repeat",
+                                                                "type":  "number",
+                                                                "value":  1
+                                                            },
+                                                            {
+                                                                "name":  "keep_proportion",
+                                                                "type":  "toggle",
+                                                                "value":  true
+                                                            },
+                                                            {
+                                                                "name":  "divisible_by",
+                                                                "type":  "number",
+                                                                "value":  2
+                                                            },
+                                                            {
+                                                                "name":  "mask_channel",
+                                                                "type":  "combo",
+                                                                "value":  "alpha"
+                                                            },
+                                                            {
+                                                                "name":  "background_color",
+                                                                "type":  "text",
+                                                                "value":  ""
+                                                            },
+                                                            {
+                                                                "name":  "upload",
+                                                                "type":  "button",
+                                                                "value":  "image"
+                                                            },
+                                                            {
+                                                                "name":  "$$canvas-image-preview",
+                                                                "type":  "custom",
+                                                                "value":  ""
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                0,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  1229,
+                                            "type":  "AnySwitch",
+                                            "title":  "万能判断切换 (Any Switch)",
+                                            "description":  "AnySwitch",
+                                            "properties":  {
+                                                               "Node name for S\u0026R":  "AnySwitch",
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                },
+                                                                                     "version":  "7.5.2"
+                                                                                 }
+                                                           },
+                                            "size":  {
+                                                         "0":  255,
+                                                         "1":  46
+                                                     },
+                                            "pos":  [
+                                                        -820,
+                                                        610
+                                                    ],
+                                            "widgets":  [
+
+                                                        ],
+                                            "relativePos":  [
+                                                                280,
+                                                                480
+                                                            ]
+                                        },
+                                        {
+                                            "id":  1231,
+                                            "type":  "Load Image Batch",
+                                            "title":  "加载批次图像",
+                                            "description":  "Load Image Batch",
+                                            "properties":  {
+                                                               "Node name for S\u0026R":  "Load Image Batch",
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                },
+                                                                                     "version":  "7.5.2"
+                                                                                 }
+                                                           },
+                                            "size":  {
+                                                         "0":  260,
+                                                         "1":  270
+                                                     },
+                                            "pos":  [
+                                                        -820,
+                                                        130
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "mode",
+                                                                "type":  "combo",
+                                                                "value":  "incremental_image"
+                                                            },
+                                                            {
+                                                                "name":  "seed",
+                                                                "type":  "number",
+                                                                "value":  526633637765621
+                                                            },
+                                                            {
+                                                                "name":  "control_after_generate",
+                                                                "type":  "combo",
+                                                                "value":  "increment"
+                                                            },
+                                                            {
+                                                                "name":  "index",
+                                                                "type":  "number",
+                                                                "value":  0
+                                                            },
+                                                            {
+                                                                "name":  "label",
+                                                                "type":  "text",
+                                                                "value":  "Batch 001"
+                                                            },
+                                                            {
+                                                                "name":  "path",
+                                                                "type":  "text",
+                                                                "value":  "F:\\0 换装\\中年人6\\卡其色"
+                                                            },
+                                                            {
+                                                                "name":  "pattern",
+                                                                "type":  "text",
+                                                                "value":  "*"
+                                                            },
+                                                            {
+                                                                "name":  "allow_RGBA_output",
+                                                                "type":  "combo",
+                                                                "value":  "true"
+                                                            },
+                                                            {
+                                                                "name":  "filename_text_extension",
+                                                                "type":  "combo",
+                                                                "value":  "true"
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                280,
+                                                                0
+                                                            ]
+                                        },
+                                        {
+                                            "id":  1233,
+                                            "type":  "忽略多组孤海",
+                                            "title":  "忽略多组 孤海",
+                                            "description":  "忽略多组孤海",
+                                            "properties":  {
+                                                               "ue_properties":  {
+                                                                                     "widget_ue_connectable":  {
+
+                                                                                                               },
+                                                                                     "input_ue_unconnectable":  {
+
+                                                                                                                }
+                                                                                 },
+                                                               "Node name for S\u0026R":  "忽略多组孤海",
+                                                               "guhai_ig_filter":  "",
+                                                               "guhai_ig_mode":  "always_one",
+                                                               "guhai_ig_active":  "00 单张",
+                                                               "guhai_ig_active_set":  null,
+                                                               "guhai_ig_name_color":  "#a89961",
+                                                               "guhai_ig_disable":  false,
+                                                               "guhai_ig_sort_order":  "position",
+                                                               "guhai_ig_color_filter":  "none",
+                                                               "guhai_ig_ui_scale":  1
+                                                           },
+                                            "size":  {
+                                                         "0":  350,
+                                                         "1":  113
+                                                     },
+                                            "pos":  [
+                                                        -830,
+                                                        450
+                                                    ],
+                                            "widgets":  [
+                                                            {
+                                                                "name":  "guhai_ig",
+                                                                "type":  "ig_custom",
+                                                                "value":  ""
+                                                            }
+                                                        ],
+                                            "relativePos":  [
+                                                                270,
+                                                                320
+                                                            ]
+                                        }
+                                    ],
+                          "connections":  [
+                                              {
+                                                  "from_node_index":  0,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  1,
+                                                  "to_slot":  0
+                                              },
+                                              {
+                                                  "from_node_index":  2,
+                                                  "from_slot":  0,
+                                                  "to_node_index":  1,
+                                                  "to_slot":  1
+                                              }
+                                          ],
+                          "nodeCount":  4,
+                          "id":  "1785167109131",
+                          "category":  "节点组",
+                          "created_at":  1785167109.1319277
+                      },
+                      {
+                          "type":  "保存图像JPG 大江",
+                          "title":  "保存图像JPG 大江",
+                          "description":  "保存图像JPG 大江 节点",
+                          "properties":  {
+                                             "ue_properties":  {
+                                                                   "widget_ue_connectable":  {
+
+                                                                                             },
+                                                                   "input_ue_unconnectable":  {
+
+                                                                                              }
+                                                               },
+                                             "Node name for S\u0026R":  "保存图像JPG 大江"
+                                         },
+                          "size":  {
+                                       "0":  270,
+                                       "1":  360
+                                   },
+                          "widgets":  [
+                                          {
+                                              "name":  "文件名前缀",
+                                              "type":  "text",
+                                              "value":  "%date:yyyy-MM-dd%\\%date:yyyy-MM-dd% %date:hh-mm-ss%"
+                                          },
+                                          {
+                                              "name":  "同时保存工作流",
+                                              "type":  "toggle",
+                                              "value":  false
+                                          }
+                                      ],
+                          "id":  "1788505231261",
+                          "category":  "默认分类",
+                          "created_at":  1788505231.2616665
+                      }
+                  ]
+}
