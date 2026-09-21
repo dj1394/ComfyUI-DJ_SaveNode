@@ -27,10 +27,10 @@ function createButton() {
     button.innerHTML = '🐷';
     button.title = 'djsavenode - 节点收藏';
     
-    // 按钮样式 - 默认左下角（距左10px，距底300px）
+    // 按钮样式 - 默认左下角（距左10px，距底100px）
     button.style.cssText = `
         position: fixed;
-        bottom: 300px;
+        bottom: 100px;
         left: 10px;
         width: 50px;
         height: 50px;
