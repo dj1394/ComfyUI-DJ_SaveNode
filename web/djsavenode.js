@@ -413,13 +413,13 @@ function renderFavorites() {
                         background: ${bgColor};
                         border: none;
                         border-radius: 5px;
-                        cursor: move;
+                        cursor: default;
                         transition: all 0.2s;
                         position: relative;
                     " data-node='${JSON.stringify(fav).replace(/'/g, "&#39;")}'>
                         <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <div class="fav-title" style="font-size: 13px; font-weight: bold; color: ${titleColor}; flex: 1; cursor: text; display: flex; align-items: center; overflow: hidden; white-space: nowrap;" title="双击重命名">
-                                <span style="cursor: grab; color: #6a7a82; margin-right: 6px; font-size: 12px;">☰</span>
+                            <div class="fav-title" style="font-size: 13px; font-weight: bold; color: ${titleColor}; flex: 1; cursor: default; display: flex; align-items: center; overflow: hidden; white-space: nowrap;" title="双击重命名">
+                                <span style="color: #6a7a82; margin-right: 6px; font-size: 12px;">☰</span>
                                 <span style="margin-right: 6px;">${icon}</span>
                                 <span style="overflow: hidden; text-overflow: ellipsis;">${fav.title || fav.type || '未知节点'}</span>
                                 ${badge}
@@ -484,12 +484,14 @@ function renderFavorites() {
             e.dataTransfer.effectAllowed = 'copyMove';
             draggingFavId = this.dataset.id;
             this.style.opacity = '0.5';
+            document.body.style.cursor = 'grabbing';
         });
 
         // 拖拽结束
         item.addEventListener('dragend', function(e) {
             this.style.opacity = '1';
             draggingFavId = null;
+            document.body.style.cursor = '';
             removeDropIndicator();
         });
 
