@@ -25,7 +25,8 @@ function createButton() {
     const button = document.createElement('button');
     button.className = 'djsavenode-btn';
     button.innerHTML = '🐷';
-    button.title = 'djsavenode - 节点收藏';
+    // 五名规则：悬停提示也用完整插件文件夹名
+    button.title = 'ComfyUI-DJ_SaveNode - 节点收藏';
     
     // 按钮样式 - 默认左下角（距左10px，距底250px）
     button.style.cssText = `
@@ -173,8 +174,9 @@ function createBrowser() {
             cursor: move;
             user-select: none;
         ">
+            <!-- 五名规则：标题栏显示完整插件文件夹名（包级 #1），红框/换机时凭它搜到插件 -->
             <div style="font-size: 16px; font-weight: bold;">
-                🐷 djsavenode - 节点收藏
+                🐷 ComfyUI-DJ_SaveNode
             </div>
             <button id="dj-close-btn" style="
                 background: rgba(255, 255, 255, 0.08);
